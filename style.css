@@ -26,4 +26,22 @@ body {
   border-radius: 10px;
   text-align: center;
   padding: 20px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* make the new book button bigger, give it a light gray background and rounded corners. */
+
+.new-book {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+/* make sure that the adder div stays on top of the rest of the boxes in content */
+
+.adder {
+  position: absolute;
+  z-index: 1;
 }
