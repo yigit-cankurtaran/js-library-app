@@ -15,3 +15,15 @@ body {
   color: #000000;
   font-size: 1.5rem;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  background-color: #ff9f1c;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
