@@ -1,0 +1,17 @@
+/* create a root tag, make it give all the text a modern font. */
+
+:root {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #2b7a78;
+}
+
+/* center the header div on top of everything. give its text a more natural black color. */
+
+.header {
+  text-align: center;
+  color: #000000;
+  font-size: 1.5rem;
+}
