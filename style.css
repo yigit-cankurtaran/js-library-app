@@ -89,3 +89,10 @@ header {
   border: none;
   padding: 0.5rem 1rem;
 }
+
+.remove-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+}
