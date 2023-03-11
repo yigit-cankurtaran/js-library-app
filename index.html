@@ -1,32 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Library</title>
+    <title>My Library Web App</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>My Library</h1>
-    <div id="button-container">
-      <button id="adder">+ New Book</button>
-    </div>
-    <!-- create a div named popup with a form inside it -->
-    <div id="popup">
-      <form id="form">
-        <label for="title">Title</label>
-        <input type="text" id="title" />
-        <label for="author">Author</label>
-        <input type="text" id="author" />
-        <label for="pages">Pages</label>
-        <input type="number" id="pages" />
-        <label for="read">Read</label>
-        <input type="checkbox" id="read" />
-        <button type="submit" id="submit">Submit</button>
+    <header>
+      <h1>Library</h1>
+      <button id="new-book-btn">New Book</button>
+    </header>
+    <div id="my-library"></div>
+    <div id="new-book-form">
+      <form>
+        <label for="book-name">Book Name:</label>
+        <input type="text" id="book-name" required />
+        <label for="pages">Pages:</label>
+        <input type="number" id="pages" required />
+        <button type="submit">Add Book</button>
       </form>
     </div>
-
-    <div id="myLibrary"></div>
+    <script src="./app.js"></script>
   </body>
 </html>

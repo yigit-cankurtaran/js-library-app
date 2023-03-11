@@ -1,33 +1,91 @@
 body {
-  background-color: #cccccc;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
 
-/* center h1 in the top middle, give it a modern font */
-
-h1 {
+header {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 3rem;
+  padding: 1rem;
 }
 
-#button-container {
-  text-align: center;
+#new-book-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-#adder {
-  font-size: 1.5em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  border: 1px solid #000000;
-  background-color: #ffffff;
-}
-
-#adder:hover {
-  background-color: #cccccc;
-  color: #ffffff;
-}
-
-#popup {
+#new-book-form {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#new-book-form form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.2rem;
+}
+
+#new-book-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#new-book-form input[type="text"],
+#new-book-form input[type="number"] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#new-book-form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+}
+
+.book {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.book h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.book p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.book .read-btn {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
 }
