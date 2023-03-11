@@ -39,6 +39,11 @@ body {
   font-size: 1.2rem;
 }
 
+.new-book:hover {
+  background-color: #e0e0e0;
+  color: #ffffff;
+}
+
 /* make sure that the adder div stays on top of the rest of the boxes in content */
 
 .adder {
