@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let myBooks = [];
 
   // Book constructor
-  function Book(title, pages, read) {
-    this.title = title;
-    this.pages = pages;
-    this.read = read;
+  class Book {
+    constructor(title, pages, read) {
+      this.title = title;
+      this.pages = pages;
+      this.read = read;
+    }
   }
 
   // Add book to the library
@@ -76,7 +78,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Hide the new book form
   function hideNewBookForm() {
-    newBookForm.style.display = "none";
+    if (event.target.id === "add-book-btn") {
+      newBookForm.style.display = "none";
+    }
   }
 
   // Handle form submission
