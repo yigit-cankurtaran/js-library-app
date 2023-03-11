@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Hide the new book form
-  function hideNewBookForm() {
+  function hideNewBookForm(event) {
     if (event.target.id === "add-book-btn") {
       newBookForm.style.display = "none";
     }
