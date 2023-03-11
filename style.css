@@ -1,0 +1,29 @@
+body {
+  background-color: #cccccc;
+}
+
+/* center h1 in the top middle, give it a modern font */
+
+h1 {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+}
+
+#button-container {
+  text-align: center;
+}
+
+#adder {
+  font-size: 1.5em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+}
+
+#adder:hover {
+  background-color: #cccccc;
+  color: #ffffff;
+}
