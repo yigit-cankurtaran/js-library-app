@@ -90,6 +90,10 @@ header {
   padding: 0.5rem 1rem;
 }
 
+.book .read-btn.read {
+  background-color: #4caf50;
+}
+
 .remove-btn {
   background-color: #f44336;
   color: white;

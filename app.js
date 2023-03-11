@@ -38,11 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Display books in the library
   function displayBooks() {
-    // Clear existing books
-    while (myLibrary.firstChild) {
-      myLibrary.removeChild(myLibrary.firstChild);
-    }
-
     // Add each book to the library
     myBooks.forEach((book, index) => {
       const bookDiv = document.createElement("div");
@@ -58,8 +53,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const readBtn = document.createElement("button");
       readBtn.classList.add("read-btn");
-      readBtn.textContent = book.read ? "Read" : "Unread";
-      readBtn.addEventListener("click", () => toggleReadStatus(index));
+      if (book.read) {
+        readBtn.classList.add("read");
+        readBtn.textContent = "Read";
+      } else {
+        readBtn.classList.add("unread");
+        readBtn.textContent = "Unread";
+      }
+      readBtn.addEventListener("click", () => {
+        book.read = !book.read;
+        if (book.read) {
+          readBtn.classList.remove("unread");
+          readBtn.classList.add("read");
+          readBtn.textContent = "Read";
+        } else {
+          readBtn.classList.remove("read");
+          readBtn.classList.add("unread");
+          readBtn.textContent = "Unread";
+        }
+      });
       bookDiv.appendChild(readBtn);
 
       const removeBtn = document.createElement("button");
